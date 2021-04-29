@@ -1,0 +1,620 @@
+/*!
+ * Start Bootstrap - SB Admin Bootstrap Admin Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+body {
+    margin-top: 100px;
+    background-color: #222;
+}
+
+@media(min-width:768px) {
+    body {
+        margin-top: 0;
+    }
+}
+
+#wrapper {
+    padding-left: 0;
+}
+
+#page-wrapper {
+    width: 100%;
+    min-height: 700px !important;
+    padding: 0;
+    background-color: #fff;
+}
+
+.huge {
+    font-size: 50px;
+    line-height: normal;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 10px;
+    }
+}
+
+/* Top Navigation */
+
+.top-nav {
+    padding: 0 15px;
+}
+
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+
+.top-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+    color: #999;
+}
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.top-nav>.open>.dropdown-menu {
+    float: left;
+    position: absolute;
+    margin-top: 0;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+    white-space: normal;
+}
+
+ul.message-dropdown {
+    padding: 0;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+li.message-preview {
+    width: 275px;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+li.message-preview>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li.message-footer {
+    margin: 5px 0;
+}
+
+ul.alert-dropdown {
+    width: 200px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+nav.navbar {
+    padding: 10px 25px 10px 15px;
+    width: calc(100% + 225px);
+    margin-left: -225px;
+}
+
+button.navbar-toggle {
+    border: 0;
+    background: #222;
+    color: #fff;
+    font-size: 27px;
+    padding: 0 10px 0 0;
+    cursor: pointer;
+}
+
+button.navbar-toggle:hover {
+    color: #ccc;
+}
+
+.navbar-brand:hover {
+    color: #ccc;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.dropdown-toggle::after {
+    vertical-align: middle;
+}
+
+.dropdown-menu {
+    left: auto;
+    right: 0;
+    padding: 10px 12px;
+    margin: 10px 0 0;
+}
+
+li.divider {
+    height: 1px;
+    background: #ccc;
+    margin: 8px 0;
+}
+
+.dropdown-menu.show>li>a {
+    color: #000;
+    padding-left: 22px;
+    position: relative;
+}
+
+.dropdown-menu.show>li>a>i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdown-menu.show>li>a:hover {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.side-nav>li.menu>a {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: context-menu;
+}
+
+.side-nav>li.menu {
+    margin-bottom: 23px;
+}
+
+.side-nav>li:not(.menu) {
+    margin-bottom: 12px;
+}
+
+.side-nav>li:not(.menu)>a {
+    width: 100%;
+    color: #fff;
+    display: block;
+    position: relative;
+    padding-left: 25px;
+}
+
+.side-nav>li:not(.menu)>a>i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 74px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #222;
+        bottom: 0;
+        overflow-x: hidden;
+        padding: 0 10px 0 15px;
+        padding-bottom: 40px;
+    }
+
+    .side-nav>li>a {
+        width: 100%;
+        color: #fff;
+        display: block;
+        position: relative;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: transparent !important;
+        text-decoration: none;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 5px 15px 0px 25px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+.panel-heading {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.panel-body {
+    position: relative;
+}
+
+a.add {
+    position: absolute;
+    top: -10px;
+    right: -6px;
+    transform: translateY(-100%);
+    color: #000;
+    font-size: 0;
+}
+
+a.add>i {
+    font-size: 30px;
+}
+
+th.text-center:last-child {
+    width: 80px;
+}
+
+a.delete {
+    background: transparent;
+    color: #000;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    width: 18px;
+}
+
+a.delete>i {
+    font-size: 20px;
+}
+
+a.edit {
+    border-bottom: 0 !important;
+    background: transparent;
+    color: #000;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}
+
+a.edit>i {
+    font-size: 20px;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+/* Flot Chart Containers */
+
+.flot-chart {
+    display: block;
+    height: 400px;
+}
+
+.flot-chart-content {
+    width: 100%;
+    height: 100%;
+}
+
+/* Custom Colored Panels */
+
+.huge {
+    font-size: 40px;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green>.panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green>a {
+    color: #5cb85c;
+}
+
+.panel-green>a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red>.panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red>a {
+    color: #d9534f;
+}
+
+.panel-red>a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow>.panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow>a {
+    color: #f0ad4e;
+}
+
+.panel-yellow>a:hover {
+    color: #df8a13;
+}
+
+#footer {
+    text-align: center;
+}
+
+#footer p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 50px;
+}
+
+p.dropdown {
+    border: 1px solid #000;
+    padding: 4px 10px 4.5px;
+    margin: 0;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+}
+
+p.dropdown>i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-55%);
+    font-size: 12px;
+}
+
+p.dropdown+.dropdown {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    opacity: 0;
+    margin-top: -35px;
+}
+
+p.dropdown+.dropdown>a {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background: transparent;
+    border-radius: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+td[data-aria="Published"] {
+    color: #28a745;
+    font-weight: 600;
+}
+
+td[data-aria="Pending Review"] {
+    color: #ffc107;
+    font-weight: 600;
+}
+
+td[data-aria="Not Approved"] {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.btn-danger:hover {
+    color: #ccc;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+a.btn.btn-success {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.show>.btn-success.dropdown-toggle {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    color: #ddd;
+}
+
+.btn-success.focus,
+.btn-success:focus,
+.btn.focus,
+.btn:focus,
+.btn-success:not(:disabled):not(.disabled).active:focus,
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.show>.btn-success.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+form.form-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-left {
+    width: calc(100% - 250px);
+}
+
+.content-right {
+    width: 250px;
+    padding-left: 20px;
+}
+
+textarea.form-control {
+    min-height: 270px;
+}
+
+input[name="img"] {
+    padding: 3px 10px;
+}
+
+.content.radio label {
+    text-transform: capitalize;
+}
+
+.content.radio {
+    border: 1px solid #ced4da;
+    padding: 5px 10px;
+    position: relative;
+    min-height: 36px;
+}
+
+.content.radio label {
+    text-transform: capitalize;
+    position: absolute;
+    margin: -1px 5px;
+}
+
+.content.radio a.add {
+    top: -5px;
+    right: -5px;
+    color: #aaa;
+    display: none;
+}
+
+.content strong {
+    text-transform: capitalize;
+}
+
+.content.radio a.edit {
+    float: right;
+    margin: 1px -10px;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+form.form-horizontal.popup {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #ced4da;
+    min-width: 300px;
+    padding: 10px 15px 5px;
+    z-index: 999;
+    background: #fff;
+}
+
+form.form-horizontal.popup .form-group {
+    width: 100%;
+}
+
+.gray-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 70%);
+    z-index: 1;
+}
+
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.dropbtn {
+    padding: 4px 20px 4.5px 8px;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropbtn>i {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-45%);
+    font-size: 12px;
+}
+
+.show {
+    display: block;
+}
